@@ -1,0 +1,165 @@
+.amazon-header {
+  background-color:#23c483;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+}
+
+.amazon-header-left-section {
+  width: 180px;
+}
+
+@media (max-width: 800px) {
+  .amazon-header-left-section {
+    width: unset;
+  }
+}
+
+.header-link {
+  display: inline-block;
+  padding: 6px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin-left: 10px;
+}
+
+.header-link:hover {
+  border: 1px solid white;
+}
+
+.amazon-logo {
+  width: 80px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.amazon-mobile-logo {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .amazon-logo {
+    display: none;
+  }
+
+  .amazon-mobile-logo {
+    display: block;
+    height: 70px;
+    margin-top: 5px;
+  }
+}
+
+.amazon-header-middle-section {
+  flex: 1;
+  max-width: 850px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.search-bar {
+  flex: 1;
+  width: 50px;
+  font-size: 16px;
+  height: 38px;
+  padding-left: 15px;
+  padding-right: 100px;
+  border: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+
+.search-button {
+  background-color: rgba(121, 62, 62, 0.116);
+  border: none;
+  width: 45px;
+  height: 40px;
+ border-radius: 100%;
+  flex-shrink: 0;
+  position: relative;
+  right:44px;
+}
+
+.search-icon {
+  height: 22px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.amazon-header-right-section {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.orders-link {
+  color: white;
+}
+
+.returns-text {
+  display: block;
+  font-size: 13px;
+}
+
+.orders-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+right: 40px;
+border-color: rgba(2, 82, 50, 0.4);
+border-radius: 10px;
+border-width: 1px;
+}
+@media(max-width: 500px){
+  .cart-link{
+    margin-right: 90px;
+  
+  }
+}
+
+.cart-icon {
+  width: 55px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  
+  width: 26px;
+  text-align: center;
+}
